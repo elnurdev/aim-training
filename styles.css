@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Khula&display=swap");
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -10,8 +12,14 @@ body {
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  background: linear-gradient(90deg, #29323c 0%, #485563 100%);
   text-align: center;
 }
+
+/* .container {
+  max-width: 500px;
+  margin: 0 auto;
+} */
 
 a {
   color: #fff;
@@ -37,9 +45,9 @@ h1 {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background: linear-gradient(90deg, #29323c 0%, #485563 100%);
   width: 100vw;
   transition: margin 0.5s ease-out;
-  background: linear-gradient(90deg, #29323c 0%, #485563 100%);
 }
 
 .screen.up {
@@ -99,4 +107,14 @@ h1 {
   position: absolute;
   border-radius: 50%;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .screen {
+    padding: 0 10px;
+  }
+  
+  .board {
+    width: 100%;
+  }
 }
